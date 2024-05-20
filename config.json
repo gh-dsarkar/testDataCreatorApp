@@ -8,7 +8,7 @@
 	"password": "Password1234!"
   },
   "lims-staging":
-  { "_comment": "LIMS Creedentials",
+  { "_comment": "LIMS Credentials",
 	  "url": "https://lims-staging.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
@@ -16,19 +16,19 @@
   },
   "lims-val":
 	
-  { "_comment": "LIMS Creedentials",
+  { "_comment": "LIMS Credentials",
 	  "url": "https://lims-val.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
   },
   "lims-sqa":
-  { "_comment": "LIMS Creedentials",
+  { "_comment": "LIMS Credentials",
 	  "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
   },
   "lims-dev":
-  { "_comment": "LIMS Creedentials",
+  { "_comment": "LIMS Credentials",
 	  "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""

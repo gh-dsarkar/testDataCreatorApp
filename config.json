@@ -1,29 +1,35 @@
 {
   "Billing_cred":
   {
+	  "_comment": "Billing API Creedentials",
 	"url": "https://auth-val.k8s.ghdna.io",
 	"billingurl": "https://billing-val.k8s.ghdna.io",
 	"username":"superAdminUser@guardanthealth.com",
 	"password": "Password1234!"
   },
   "lims-staging":
-  { "url": "https://lims-staging.ghdna.io/ghlims/logon.jsp?sso=n",
+  { "_comment": "LIMS Creedentials",
+	  "url": "https://lims-staging.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
 
   },
   "lims-val":
-  { "url": "https://lims-val.ghdna.io/ghlims/logon.jsp?sso=n",
+	
+  { "_comment": "LIMS Creedentials",
+	  "url": "https://lims-val.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
   },
   "lims-sqa":
-  { "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
+  { "_comment": "LIMS Creedentials",
+	  "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
   },
   "lims-dev":
-  { "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
+  { "_comment": "LIMS Creedentials",
+	  "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
 	"username": "",
 	"password" : ""
   },

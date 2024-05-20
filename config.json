@@ -1,0 +1,69 @@
+{
+  "Billing_cred":
+  {
+	"url": "https://auth-val.k8s.ghdna.io",
+	"billingurl": "https://billing-val.k8s.ghdna.io",
+	"username":"superAdminUser@guardanthealth.com",
+	"password": "Password1234!"
+  },
+  "lims-staging":
+  { "url": "https://lims-staging.ghdna.io/ghlims/logon.jsp?sso=n",
+	"username": "dsarkar",
+	"password" : "Ventana@30gh"
+
+  },
+  "lims-val":
+  { "url": "https://lims-val.ghdna.io/ghlims/logon.jsp?sso=n",
+	"username": "dsarkar",
+	"password" : "Ventana@30gh"
+  },
+  "lims-sqa":
+  { "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
+	"username": "dsarkar",
+	"password" : "Ventana@30gh"
+  },
+  "lims-dev":
+  { "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
+	"username": "dsarkar",
+	"password" : "Ventana@30gh"
+  },
+  
+  "VAL_DATABASE" :
+  {
+    "host" : "gh-val-db-lims.ghdna.io",
+    "db" : "limsval",
+    "username" : "dsarkar",
+    "password": "Ventana@29gh"
+  },
+   "STAGING_DATABASE" :
+  {
+	"host" : "gh-staging-db-lims.ghdna.io",
+    "db" : "limsstg",
+    "username" : "dsarkar",
+    "password": "g6L4Qo[YdZsRUZ5S3q#nJAzl5"
+  },
+  "SQA_DATABASE" :
+  {
+    "host" : "gh-sqa-db-lims.ghdna.io",
+    "db" : "limssqa",
+    "username" : "dsarkar",
+    "password": "Ventana@29gh"
+  },
+  "DEV_DATABASE" :
+  {
+    "host" : "gh-dev-db-lims.ghdna.io",
+    "db" : "limssqa",
+    "username" : "dsarkar",
+    "password": "Ventana@29gh"
+  },
+  "JENKINS":
+{
+  "username" : "dsarkar",
+  "token": "11726fb927f368765f67749346353408d4",
+  "url": "https://jenkins.bik8s.gh-bisre.com/"
+},
+  "CURRENT_ENV": "VAL"
+  
+
+ 
+}

@@ -1,0 +1,8 @@
+requests~=2.31.0
+customtkinter~=5.2.2
+oracledb~=2.1.2
+jenkins~=1.0.2
+python-jenkins~=1.8.2
+selenium~=4.17.2
+pillow~=10.3.0
+setuptools~=69.5.1

@@ -8,53 +8,53 @@
   },
   "lims-staging":
   { "url": "https://lims-staging.ghdna.io/ghlims/logon.jsp?sso=n",
-	"username": "dsarkar",
-	"password" : "Ventana@30gh"
+	"username": "",
+	"password" : ""
 
   },
   "lims-val":
   { "url": "https://lims-val.ghdna.io/ghlims/logon.jsp?sso=n",
-	"username": "dsarkar",
-	"password" : "Ventana@30gh"
+	"username": "",
+	"password" : ""
   },
   "lims-sqa":
   { "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
-	"username": "dsarkar",
-	"password" : "Ventana@30gh"
+	"username": "",
+	"password" : ""
   },
   "lims-dev":
   { "url": "https://lims-sqa.ghdna.io/ghlims/logon.jsp?sso=n",
-	"username": "dsarkar",
-	"password" : "Ventana@30gh"
+	"username": "",
+	"password" : ""
   },
   
   "VAL_DATABASE" :
   {
     "host" : "gh-val-db-lims.ghdna.io",
     "db" : "limsval",
-    "username" : "dsarkar",
-    "password": "Ventana@29gh"
+    "username" : "",
+    "password": ""
   },
    "STAGING_DATABASE" :
   {
 	"host" : "gh-staging-db-lims.ghdna.io",
     "db" : "limsstg",
-    "username" : "dsarkar",
-    "password": "g6L4Qo[YdZsRUZ5S3q#nJAzl5"
+    "username" : "",
+    "password": ""
   },
   "SQA_DATABASE" :
   {
     "host" : "gh-sqa-db-lims.ghdna.io",
     "db" : "limssqa",
-    "username" : "dsarkar",
-    "password": "Ventana@29gh"
+    "username" : "",
+    "password": ""
   },
   "DEV_DATABASE" :
   {
     "host" : "gh-dev-db-lims.ghdna.io",
     "db" : "limssqa",
-    "username" : "dsarkar",
-    "password": "Ventana@29gh"
+    "username" : "",
+    "password": ""
   },
   "JENKINS":
 {

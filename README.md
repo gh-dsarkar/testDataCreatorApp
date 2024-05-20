@@ -5,6 +5,7 @@ The Test Data creator app would be useful for the following use Cases:
 
 Things to Note:
   1. Before using the App, users should key in their Credentials in the config.json for different ENV.
-  2. The Reference Requests needs to exists in the same ENV that we are trying to create the new Requests.
-  3. Once a Task is selected the App can be reused multiple times. However if the user wants to use a different task , the user should close the app and restart the app. This is to ensure a different session id for connecting with Chrome to perform actions inside LIMS.
+  2. Cd to the location of the App folder and pip install requirements.txt to install all necessary requirements.
+  3. The Reference Requests needs to exists in the same ENV that we are trying to create the new Requests.
+  4. Once a Task is selected the App can be reused multiple times. However if the user wants to use a different task , the user should close the app and restart the app. This is to ensure a different session id for connecting with Chrome to perform actions inside LIMS.
         

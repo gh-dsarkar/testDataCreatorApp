@@ -127,6 +127,46 @@ def getDatafromLIMS(requestId):
         pdb.set_trace()
 
 
+def getRunID(sampleID):
+    try:
+        # Connect to LIMS DB
+        connect_DB()
+
+        # Execute the query
+        # sql = "SELECT * FROM LABVANTAGE.S_REQUEST where S_REQUESTID = '"+ReqID+"'"
+
+        # QUERY to FETCH
+        query =  """SELECT DISTINCT ACCESSIONID  ,SAMPLESTATUS ,TUBETYPE,qc.RUNID  FROM U_GHSAMPLEQCMETRICS ug 
+                JOIN u_ghsampleqc qc ON ug.FLOWCELLID  = SUBSTR(qc.runid, INSTR(qc.runid, '_', -1) + 1)
+                "WHERE FLOWCELLID  IN  SUBSTR((SELECT runid  FROM u_ghsampleqc WHERE SAMPLEID  LIKE """' +sampleID+'""" ), INSTR((SELECT runid  FROM u_ghsampleqc WHERE SAMPLEID  LIKE """' +sampleID+'"""), '_', -1) + 1)""";
+
+        curs = __cursor
+        curs.execute(query)
+        # data = curs.execute(query)
+        print(curs)
+        print('------')
+        # print(data)
+        # df = pd.DataFrame(rows, columns=['MEDCOVERAGE' , 'PAYOR' , 'TESTCODE' , 'TXSTATUS' ,'DOS', 'POD'])
+        excel_file_path = '../testData/G360_Clinical.xlsx'
+        # df.to_excel(excel_file_path, index=2)
+
+        temp_list=[]
+        # for row in (this.__cursor.fetchone()):
+        #     for each_resultSet in (json.load(row)['results']): #Results set
+        #         temp_list.append((each_resultSet['name'],each_resultSet['value']))
+
+        for row in (curs.fetchall()):
+            print(row)
+            for each_col in (row): #Results set
+                if (isinstance(each_col, datetime.datetime)):
+                    each_col = each_col.strftime("%m-%d-%Y")
+                temp_list.append(str(each_col))
+        return temp_list
+
+    except Exception as e:
+        print(e)
+        pdb.set_trace()
+
 
 
 def closeConnection():
